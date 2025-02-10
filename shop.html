@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>G-Scents- Luxury Fragrances</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+        /* Background with Overlay */
+        body {
+            font-family: 'Raleway', sans-serif;
+            background: url('b1.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Dark Overlay Effect */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: -1;
+        }
+
+        .navbar-custom {
+            background-color: rgba(108, 117, 125, 0.9);
+            padding: 15px;
+        }
+
+        .navbar-custom .navbar-brand {
+            color: #ffc107 !important;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .navbar-custom .nav-link {
+            color: #f8f9fa !important;
+            font-size: 18px;
+        }
+
+        .navbar-custom .nav-link:hover {
+            color: #ffc107 !important;
+        }
+
+        /* Landing Section */
+        .landing {
+            background: url("b2.jpg") no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .landing h1 {
+            font-size: 50px;
+            font-weight: bold;
+            color: #fff;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+
+        .btn-shop {
+            background-color: #ffc107;
+            color: black;
+            font-size: 20px;
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .btn-shop:hover {
+            background-color: #e0a800;
+            color: white;
+        }
+
+        /* Our Story Section */
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 50px;
+            border-radius: 15px;
+            backdrop-filter: blur(8px);
+        }
+
+        .about-image {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+        }
+
+        .footer-custom {
+            background-color: rgba(108, 117, 125, 0.9);
+            color: #f8f9fa;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 16px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">G-Scents</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="shop.html">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                </ul>
+                <form class="d-flex ms-3">
+                    <input class="form-control search-box" type="search" id="searchInput" placeholder="Search products..." aria-label="Search" onkeyup="searchProducts()">
+                </form>
+            </div>
+        </div>
+    </nav>
+    
+<!-- Product Section -->
+<div class="container my-4">
+    <h2 class="text-center">Our Perfumes</h2>
+    <div class="row">
+        <!-- Product Card -->
+        <style>
+            .card-img-top {
+                width: 100%;
+                height: 250px; /* Adjust this value based on your design preference */
+                object-fit: cover; /* Ensures images maintain aspect ratio and fill the container */
+            }
+        </style>
+
+        <div class="col-md-4">
+            <div class="card">
+                <a href="product.html" class="product-link" data-name="Next Chapter" data-price="999.00" data-image="6.jpg" data-description="HL Perfumes Next Chapter is a collection created by Henrik Lundqvist in collaboration with Morgan Madison. Following his celebrated professional hockey career, this fragrance project is part of Henrik Lundqvist’s next chapter in life – hence the name. The collection includes two niche fragrances - Next Chapter Vol. 1 and Vol. 2. The bottle design is courtesy of Martti Rytkönen’s well-known City series for Orrefors.">
+                    <img src="6.jpg" class="card-img-top">
+                </a>
+                <div class="card-body">
+                    <h5>
+                        <a href="product.html" class="product-link" data-name="Next Chapter" data-price="999.00" data-image="6.jpg" data-description="HL Perfumes Next Chapter is a collection created by Henrik Lundqvist in collaboration with Morgan Madison. Following his celebrated professional hockey career, this fragrance project is part of Henrik Lundqvist’s next chapter in life – hence the name. The collection includes two niche fragrances - Next Chapter Vol. 1 and Vol. 2. The bottle design is courtesy of Martti Rytkönen’s well-known City series for Orrefors.">
+                            Next Chapter
+                        </a>
+                    </h5>
+                    <p class="price">999.00</p>
+                    <a href="product.html" class="btn btn-primary view-details" data-name="Next Chapter" data-price="999.00" data-image="6.jpg" data-description="HL Perfumes Next Chapter is a collection created by Henrik Lundqvist in collaboration with Morgan Madison. Following his celebrated professional hockey career, this fragrance project is part of Henrik Lundqvist’s next chapter in life – hence the name. The collection includes two niche fragrances - Next Chapter Vol. 1 and Vol. 2. The bottle design is courtesy of Martti Rytkönen’s well-known City series for Orrefors.">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <a href="product.html" class="product-link" data-name="Plum BodyLovin'" data-price="1399.00" data-image="1.jpg" data-description="Long Lasting | Floral-Musky Fragrance | Supremely Luxurious | Perfect For All Occasions">
+                    <img src="1.jpg" class="card-img-top">
+                </a>
+                <div class="card-body">
+                    <h5>
+                        <a href="product.html" class="product-link" data-name="Plum BodyLovin'" data-price="1399.00" data-image="1.jpg" data-description="Long Lasting | Floral-Musky Fragrance | Supremely Luxurious | Perfect For All Occasions">
+                            Plum BodyLovin'
+                        </a>
+                    </h5>
+                    <p class="price">1399.00</p>
+                    <a href="product.html" class="btn btn-primary view-details" data-name="Plum BodyLovin'" data-price="1399.00" data-image="1.jpg" data-description="Long Lasting | Floral-Musky Fragrance | Supremely Luxurious | Perfect For All Occasions">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <a href="product.html" class="product-link" data-name="VILLAIN EAU DE " data-price="699.00" data-image="2.jpg" data-description="Villain Is A Heady Concoction Of Madness Mixed With A Hint Of Wicked Along With Several Bursts Of Outrageousness And A Tingling Spiciness Of  Twisted Humour Bottled Up In Intriguing Grandeur">
+                    <img src="2.jpg" class="card-img-top">
+                </a>
+                <div class="card-body">
+                    <h5>
+                        <a href="product.html" class="product-link" data-name="VILLAIN EAU DE" data-price="699.00" data-image="2.jpg" data-description="Villain Is A Heady Concoction Of Madness Mixed With A Hint Of Wicked Along With Several Bursts Of Outrageousness And A Tingling Spiciness Of  Twisted Humour Bottled Up In Intriguing Grandeur">
+                            VILLAIN EAU DE PARFUM FOR MEN
+                        </a>
+                    </h5>
+                    <p class="price">699.00</p>
+                    <a href="product.html" class="btn btn-primary view-details" data-name="VILLAIN EAU DE" data-price="699.00" data-image="2.jpg" data-description="Villain Is A Heady Concoction Of Madness Mixed With A Hint Of Wicked Along With Several Bursts Of Outrageousness And A Tingling Spiciness Of  Twisted Humour Bottled Up In Intriguing Grandeur">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <a href="product.html" class="product-link" data-name="Unisex perfumes" data-price="899.00" data-image="3.jpg" data-description="A soft, romantic fragrance with notes of rose and patchouli.">
+                    <img src="3.jpg" class="card-img-top">
+                </a>
+                <div class="card-body">
+                    <h5>
+                        <a href="product.html" class="product-link" data-name="Unisex perfumes" data-price="899.00" data-image="3.jpg" data-description="A soft, romantic fragrance with notes of rose and patchouli.">
+                            Unisex perfumes
+                        </a>
+                    </h5>
+                    <p class="price">899.00</p>
+                    <a href="product.html" class="btn btn-primary view-details" data-name="Unisex perfumes" data-price="899.00" data-image="3.jpg" data-description="A soft, romantic fragrance with notes of rose and patchouli.">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <a href="product.html" class="product-link" data-name="L'eau d'Issey" data-price="1599.00" data-image="4.jpg" data-description="A fresh and vibrant citrus fragrance for a refreshing feel.">
+                    <img src="4.jpg" class="card-img-top">
+                </a>
+                <div class="card-body">
+                    <h5>
+                        <a href="product.html" class="product-link" data-name="L'eau d'Issey" data-price="1599.00" data-image="4.jpg" data-description="A fresh and vibrant citrus fragrance for a refreshing feel.">
+                            L'eau d'Issey
+                        </a>
+                    </h5>
+                    <p class="price">1599.00</p>
+                    <a href="product.html" class="btn btn-primary view-details" data-name="L'eau d'Issey" data-price="1599.00" data-image="4.jpg" data-description="A fresh and vibrant citrus fragrance for a refreshing feel.">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <a href="product.html" class="product-link" data-name="Sauvage Parfum" data-price="1299.00" data-image="5.jpg" data-description=" A fresh yet intense cologne that melds the brightness of mandarin with the warm tones of tonka bean and sandalwood.">
+                    <img src="5.jpg" class="card-img-top">
+                </a>
+                <div class="card-body">
+                    <h5>
+                        <a href="product.html" class="product-link" data-name="Sauvage Parfum" data-price="1299.00" data-image="5.jpg" data-description=" A fresh yet intense cologne that melds the brightness of mandarin with the warm tones of tonka bean and sandalwood.">
+                            Sauvage Parfum
+                        </a>
+                    </h5>
+                    <p class="price">1299.00</p>
+                    <a href="product.html" class="btn btn-primary view-details" data-name="Sauvage Parfum" data-price="1299.00" data-image="5.jpg" data-description=" A fresh yet intense cologne that melds the brightness of mandarin with the warm tones of tonka bean and sandalwood.">View Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Save product details and go to product page
+    document.querySelectorAll(".product-link, .view-details").forEach(link => {
+        link.addEventListener("click", function(event) {
+            event.preventDefault();
+            localStorage.setItem("selectedProduct", JSON.stringify({
+                name: this.getAttribute("data-name"),
+                price: this.getAttribute("data-price"),
+                image: this.getAttribute("data-image"),
+                description: this.getAttribute("data-description")
+            }));
+            window.location.href = "product.html";
+        });
+    });
+
+    // Add to Cart with Confirmation
+    document.querySelectorAll(".add-to-cart").forEach(button => {
+        button.addEventListener("click", function () {
+            let name = this.getAttribute("data-name");
+            let price = parseFloat(this.getAttribute("data-price"));
+
+            if (confirm(`Do you want to add ${name} to the cart?`)) {
+                let cart = JSON.parse(localStorage.getItem("cart")) || [];
+                let existingItem = cart.find(item => item.name === name);
+                if (existingItem) {
+                    existingItem.quantity++;
+                } else {
+                    cart.push({ name, price, quantity: 1 });
+                }
+
+                localStorage.setItem("cart", JSON.stringify(cart));
+                alert(`${name} has been added to your cart.`);
+            }
+        });
+    });
+
+    function searchProducts() {
+        let input = document.getElementById("searchInput").value.toLowerCase();
+        let cards = document.querySelectorAll(".col-md-4"); // Each product card
+        
+        cards.forEach(card => {
+            let productName = card.querySelector("h5 a").textContent.toLowerCase();
+            
+            if (productName.includes(input)) {
+                card.style.display = "block";
+            } else {
+                card.style.display = "none";
+            }
+        });
+    }
+</script>
+<script src="cart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
