@@ -1,1 +1,1 @@
-# gscents
+This project is a luxury fragrance e-commerce website, "G-Scents," featuring a responsive design built with HTML, CSS, and Bootstrap. It includes pages for browsing products, viewing details, managing a shopping cart, and completing checkout. The site uses local storage for cart functionality and dynamic product interactions. 
